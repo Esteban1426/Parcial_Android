@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Recursividad
+{
+    public static void main(String[] args) 
+    {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingresa el valor de la base: ");
+        int numero = teclado.nextInt();
+        System.out.println("Ingresa el valor del exponente: ");
+        int exponente = teclado.nextInt();
+        teclado.close();
+        
+        int potencia = (numero * exponente) * numero;
+        System.out.println("La potencia del numero: "+numero + " Con el exponente:" + exponente + " es: " potencia);
+    }
+}
